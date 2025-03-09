@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_1/utils/constants/colors.dart';
+import '../../../common/widgets/app_bar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,13 +7,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Mega Shop",
-          style: TextStyle(fontFamily: "DMSans",
-          fontWeight: FontWeight.w700, color: FColors.oceanBlue),
-        ) ,
-      ),
+      appBar: FAppBar(),
     );
   }
 }
